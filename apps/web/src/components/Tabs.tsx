@@ -4,13 +4,6 @@ import { useState } from "react";
 
 export const tabs = {
   Traces: "traces",
-  // Chains: "chains",
-  // Index: "index",
-  // Documents: "documents",
-  // Agents: "agents",
-  // Policies: "policies",
-  // Events: "events",
-  // Settings: "settings",
 };
 
 export const tabAtom = atom(tabs.Traces);
@@ -21,6 +14,10 @@ export const Tabs = () => {
   const handleClickTab = (tab: string) => {
     setActiveTab(tab);
   };
+
+  const consoleFunc = () => {
+    console.log(activeTab);
+  }
 
   return (
     <div

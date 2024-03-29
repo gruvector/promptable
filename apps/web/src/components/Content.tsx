@@ -39,15 +39,6 @@ export const Content = () => {
     traces = []
   }
 
-  // const parent = parentId && traces.find((t) => t.id === parentId);
-
-  // const a = api.trace.add.useMutation();
-
-  // useEffect(() => {
-  //   a.mutate({trace: parent})
-  // }, [])
-
-
   //TODO: change so that traces is queried from gettraces
 
   return (
@@ -130,8 +121,6 @@ const Trace = ({ trace, level }: { trace: Trace; level: number }) => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
-  
-
   const isRootNode = !trace.parentId;
   const className = isRootNode
     ? "border-t-1 pt-2 pb-4"
