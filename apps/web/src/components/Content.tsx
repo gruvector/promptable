@@ -148,6 +148,7 @@ const Trace = ({ trace, level }: { trace: Trace; level: number }) => {
                 );
               })}
             </div>
+            <div className="hello">Go to the future!!!</div>
           </div>
         </div>
       )}
