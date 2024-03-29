@@ -32,6 +32,11 @@ export const Content = () => {
     }
     setParentId(id);
   };
+
+  const consoleFunc = () => {
+    console.log(parentId);
+    console.log("parentId");
+  }
   
   let traces = api.trace.getTraces.useQuery(undefined, {refetchInterval: 1000}).data;
 
@@ -130,10 +135,7 @@ const Trace = ({ trace, level }: { trace: Trace; level: number }) => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
-  const consoleFunc = () => {
-    console.log(isOpen);
-    console.log("isopen");
-  }
+  
 
   const isRootNode = !trace.parentId;
   const className = isRootNode
