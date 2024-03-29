@@ -130,6 +130,9 @@ const Trace = ({ trace, level }: { trace: Trace; level: number }) => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+  const consoleFunc = () => {
+    console.log(isOpen);
+  }
 
   const isRootNode = !trace.parentId;
   const className = isRootNode
