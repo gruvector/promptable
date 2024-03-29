@@ -39,13 +39,13 @@ export const Content = () => {
     traces = []
   }
 
-  const parent = parentId && traces.find((t) => t.id === parentId);
+  // const parent = parentId && traces.find((t) => t.id === parentId);
 
-  const a = api.trace.add.useMutation();
+  // const a = api.trace.add.useMutation();
 
-  useEffect(() => {
-    a.mutate({trace: parent})
-  }, [])
+  // useEffect(() => {
+  //   a.mutate({trace: parent})
+  // }, [])
 
 
   //TODO: change so that traces is queried from gettraces
