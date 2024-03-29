@@ -14,18 +14,11 @@ export const Tabs = () => {
   const handleClickTab = (tab: string) => {
     setActiveTab(tab);
   };
-
-  const consoleFunc = () => {
-    console.log(activeTab);
-  }
-
   return (
     <div
       className="daisy-tabs"
       style={
         {
-          // borderStyle: "solid",
-          // borderBottomWidth: "calc(var(--tab-border, .5px))",
         }
       }
     >
