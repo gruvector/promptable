@@ -32,11 +32,6 @@ export const Content = () => {
     }
     setParentId(id);
   };
-
-  const consoleFunc = () => {
-    console.log(parentId);
-    console.log("parentId");
-  }
   
   let traces = api.trace.getTraces.useQuery(undefined, {refetchInterval: 1000}).data;
 
@@ -46,11 +41,11 @@ export const Content = () => {
 
   const parent = parentId && traces.find((t) => t.id === parentId);
 
-  // const a = api.trace.add.useMutation();
+  const a = api.trace.add.useMutation();
 
-  // useEffect(() => {
-  //   a.mutate({trace: myTrace})
-  // }, [])
+  useEffect(() => {
+    a.mutate({trace: parent})
+  }, [])
 
 
   //TODO: change so that traces is queried from gettraces
