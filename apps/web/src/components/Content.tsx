@@ -132,6 +132,7 @@ const Trace = ({ trace, level }: { trace: Trace; level: number }) => {
   };
   const consoleFunc = () => {
     console.log(isOpen);
+    console.log("isopen");
   }
 
   const isRootNode = !trace.parentId;
