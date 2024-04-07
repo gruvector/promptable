@@ -22,7 +22,6 @@ const Home: NextPage = () => {
         <main className="flex h-full flex-col" data-theme={"black"}>
           <Tabs />
           <Content />
-          <h1 className="hello">hello World!!!</h1>
         </main>
       </JotaiProvider>
     </QueryClientProvider>
