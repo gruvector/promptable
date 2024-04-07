@@ -171,7 +171,6 @@ const Trace = ({ trace, level }: { trace: Trace; level: number }) => {
             <Trace key={child.id} trace={child} level={level + 1} />
           ))}
       </div>
-      <h3 className="hello">Hello World</h3>
     </div>
   );
 };
