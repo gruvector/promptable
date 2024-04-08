@@ -39,6 +39,7 @@ export const Tabs = () => {
       })}
       {/* hack for border */}
       <div className="daisy-tab daisy-tab-bordered daisy-tab-lg flex-grow" />
+      <div className="world">world great future</div>
     </div>
   );
 };
