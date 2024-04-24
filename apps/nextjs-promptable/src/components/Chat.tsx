@@ -197,7 +197,7 @@ export default function Chat() {
           <div className="flex h-full w-full flex-col items-center justify-center space-y-2">
             <div className="text-xl font-semibold">
               Build your own ChatGPT3 With Promptable!
-              hi hey hello
+              hi hey hello nice to meet you.
             </div>
           </div>
         )}
